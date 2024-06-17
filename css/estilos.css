@@ -1,0 +1,114 @@
+/* Variables CSS */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #343a40;
+    --background-color: #f8f9fa;
+    --font-family: 'Lato', sans-serif;
+    --font-size-default: 16px;
+    --font-size-large: 18px;
+    --font-size-small: 14px;
+    --font-weight-bold: bold;
+    --padding-small: 5px;
+    --padding-medium: 10px;
+    --padding-large: 20px;
+    --margin-small: 5px;
+    --margin-medium: 10px;
+    --margin-large: 20px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-default);
+    color: var(--secondary-color);
+    padding: var(--padding-large);
+}
+
+.container {
+    margin-top: var(--margin-large);
+    background-color: white;
+    padding: var(--padding-large);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--margin-large);
+    font-weight: var(--font-weight-bold);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: var(--font-weight-bold);
+    margin-right: var(--margin-medium);
+}
+
+a.btn {
+    color: white;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: var(--margin-large);
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: var(--padding-medium);
+    border: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #e9ecef;
+    text-align: left;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-body {
+    padding: var(--padding-large);
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    padding: var(--padding-large);
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin-large);
+}
+
+.pagination-container .arrow {
+    margin: 0 var(--margin-medium);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.pagination-container .text-center {
+    margin-top: var(--margin-medium);
+}
+
+.alert {
+    margin-bottom: var(--margin-medium);
+}
+
+.avatar-img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    border-radius: 6%;
+}
